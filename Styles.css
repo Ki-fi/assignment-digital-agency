@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Globals*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Variables*/
+
+:root {
+    --purple: #5722CD;
+    --blue: #4845E4;
+    --pink: #ED4385;
+    --default-body-txt: #0C0C0C;
+    --light-purple: #F2F0FF;
+    --background-grey: #F3F6F9;
+    --Grey: #7A7A7A;
+}
+
+/*Typography*/
+
+h1, h2, h3, h4, h6 {
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: var(--purple);
+}
+
+h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 1.2rem;
+}
+
+p, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+p, h3, h6 {
+    color: var(--default-body-txt);
+}
+
+/*Components*/
+
+button {
+    height: 42px;
+    padding: 0 24px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: var(--pink);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: white;
+}
+
+
+/*Page Sections*/
+
+/*--Header--*/
+
+header {
+    text-align: center;
+    background-color: var(--blue);
+}
+
+header div {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    list-style: none;
+    padding: 24px;
+    color: white;
+}
+
+/*Main*/
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 64px;
+}
+
+.intro-section div p {
+    padding-top: 32px;
+}
+
+/*Media Queries*/
+
+
