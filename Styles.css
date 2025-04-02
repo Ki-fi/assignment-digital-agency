@@ -30,17 +30,23 @@ h1, h2, h3, h4, h6 {
 
 h1 {
     color: white;
+    font-weight: 400;
 }
 
 h2 {
     color: var(--purple);
+    font-size: 1.4rem;
 }
 
-h5 {
+h3 {
+    font-size: 1.4rem;
+}
+
+h5, nav {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 p, button {
@@ -64,26 +70,41 @@ button {
     text-transform: uppercase;
     font-size: 0.6rem;
     font-weight: 400;
+    letter-spacing: 1px;
     color: white;
 }
 
+.secondary-button {
+    background-color: transparent;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--purple);
+}
 
 /*Page Sections*/
 
 /*--Header--*/
 
 header {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--blue);
 }
 
-header div {
-    padding: 64px;
+.header-outer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.header-inner-wrapper {
+    flex-basis: 750px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
+    text-align: center;
+    padding: 64px;
     gap: 16px;
 }
 
@@ -98,12 +119,13 @@ nav ul {
 
 /*Main*/
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
+.intro-section {
+    display: flex;
+    justify-content: center;
 }
 
 .intro-section div {
+    flex-basis: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,6 +137,43 @@ main {
 
 .intro-section div p {
     padding-top: 32px;
+}
+
+.work-section {
+    background-color: var(--background-grey);
+}
+
+.article-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 64px;
+}
+
+.article-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 64px;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.portfolio-image {
+    flex-basis: 900px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.portfolio-image img {
+    width: 100%;
 }
 
 /*Media Queries*/
