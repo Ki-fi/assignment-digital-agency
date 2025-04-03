@@ -64,6 +64,7 @@ p, h3, h6 {
 
 button {
     height: 42px;
+    min-width: 125px;
     padding: 0 24px;
     border-radius: 25px;
     border-style: none;
@@ -73,14 +74,28 @@ button {
     font-weight: 400;
     letter-spacing: 1px;
     color: white;
+    box-shadow: 0 3px 7px 1px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background-color: white;
+    color: var(--purple);
+    min-width: 125px;
 }
 
 .secondary-button {
     background-color: transparent;
+    min-width: 0;
     padding: 0;
     text-transform: uppercase;
     font-weight: 600;
     color: var(--purple);
+    box-shadow: none;
+}
+
+a {
+    color: var(--purple);
+    text-decoration: none;
 }
 
 /*Page Sections*/
@@ -91,7 +106,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--blue);
+    background: var(--blue);
+    background: linear-gradient(90deg, var(--blue) 36%, var(--purple) 100%);
 }
 
 .header-outer-wrapper {
@@ -133,7 +149,7 @@ nav ul {
     align-items: center;
     text-align: center;
     gap: 24px;
-    padding: 64px;
+    padding: 82px;
 }
 
 .intro-section div p {
@@ -150,7 +166,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     gap: 64px;
-    padding: 64px;
+    padding:64px 64px 32px 64px;
 }
 
 .article-2 {
@@ -158,7 +174,14 @@ nav ul {
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 64px;
-    padding: 64px;
+    padding: 32px 64px;
+}
+
+.article-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    padding:32px 64px 64px 64px;
 }
 
 .article-content {
@@ -187,11 +210,12 @@ nav ul {
     justify-content: space-around;
     gap: 32px;
     row-gap: 32px;
-    padding: 64px;
+    padding: 82px;
 }
 
 .services-card {
     border: 1px, solid, var(--purple);
+    box-shadow: 0 13px 26px -16px rgba(0,0,0,0.5);
     padding: 32px;
     flex-basis: 300px;
     flex-grow: 1;
@@ -219,7 +243,8 @@ nav ul {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: var(--blue);
+    background: var(--blue);
+    background: linear-gradient(90deg, var(--blue) 36%, var(--purple) 100%);
 }
 
 .contact-inner-wrapper {
@@ -228,7 +253,7 @@ nav ul {
     flex-direction: column;
     gap: 24px;
     color: white;
-    padding: 64px;
+    padding: 82px;
 }
 
 .contact-form {
@@ -250,7 +275,19 @@ label input, label textarea {
     padding: 12px;
 }
 
+/*Footer*/
 
+footer {
+    background-color: #0C0C0C;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 24px;
+}
 
 /*Media Queries*/
 
