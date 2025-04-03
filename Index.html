@@ -114,10 +114,23 @@
         </article>
     </section>
 
-    <section class="contact-section">
-        <h1></h1>
-        <p></p>
-        <form action=""></form>
+    <section class="contact-outer-wrapper">
+        <div class="contact-inner-wrapper">
+        <h1>Let's work together</h1>
+        <h5>Have a question? Need a quote? Let us know!</h5>
+        <form class="contact-form" onsubmit="">
+            <label for="name-field">Name
+                <input type="text" id="name-field" placeholder="Name"/>
+            </label>
+            <label for="email-field">Email
+                <input type="text" id="email-field" placeholder="Email"/>
+            </label>
+            <label for="message-field">Message
+                <textarea name="text-area" id="message-field" placeholder="Message" cols="30" rows="10"></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+        </div>
     </section>
     </main>
 

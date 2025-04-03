@@ -30,6 +30,7 @@ h1, h2, h3, h4, h6 {
 
 h1 {
     color: white;
+    font-size: 2.2rem;
     font-weight: 400;
 }
 
@@ -117,7 +118,7 @@ nav ul {
     color: white;
 }
 
-/*Main*/
+/*Intro section*/
 
 .intro-section {
     display: flex;
@@ -138,6 +139,8 @@ nav ul {
 .intro-section div p {
     padding-top: 32px;
 }
+
+/*Work section*/
 
 .work-section {
     background-color: var(--background-grey);
@@ -176,6 +179,8 @@ nav ul {
     width: 100%;
 }
 
+/*Services section*/
+
 .services-section {
     display: flex;
     flex-wrap: wrap;
@@ -207,6 +212,45 @@ nav ul {
 .services-content > p {
     font-weight: 300;
 }
+
+/*Contact section*/
+
+.contact-outer-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--blue);
+}
+
+.contact-inner-wrapper {
+    flex-basis: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+    padding: 64px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-form label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+label input, label textarea {
+    padding: 12px;
+}
+
+
 
 /*Media Queries*/
 
