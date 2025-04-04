@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Styles.css">
     <title>Rekupe Digital Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
     <header>
         <nav>
-            <ul>
-                <li>Case Studies</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+            <ul class="nav-items">
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-section">Contact Us</a></li>
             </ul>
         </nav>
         <div class="header-outer-wrapper">
@@ -22,6 +22,7 @@
         <button type="button">Let's work together</button>
         </div>
         </div>
+        <img class="header-illustration" src="assets/squiggle_line_stripe.svg" alt="illustration">
     </header>
 
     <main>
@@ -34,14 +35,14 @@
         </div>
     </section>
 
-    <section class="work-section">
+    <section class="work-section" id="case-studies">
         <article class="article-1">
             <div class="article-content">
                 <h3>Rolling Stone</h3>
                 <img src="assets/squiggle_line.svg" alt="divider-image"/>
                 <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.</p>
-                <button class="secondary-button" type="button">View project</button>
-            </div>
+                <a class="project-link" href="">View project</a>
+                </div>
             <span class="portfolio-image">
                 <img src="assets/work-image-01.jpeg" alt="portfolio-image"/>
             </span>
@@ -52,7 +53,7 @@
                 <h3>Variety</h3>
                 <img src="assets/squiggle_line.svg" alt="divider-image"/>
                 <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
-                <button class="secondary-button" type="button">View project</button>
+                <a class="project-link" href="">View project</a>
             </div>
             <span class="portfolio-image">
                 <img src="assets/work-image-02.jpeg" alt="portfolio-image"/>
@@ -64,7 +65,7 @@
                 <h3>Worth</h3>
                 <img src="assets/squiggle_line.svg" alt="divider-image"/>
                 <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
-                <button class="secondary-button" type="button">View project</button>
+                <a class="project-link" href="">View project</a>
             </div>
             <span class="portfolio-image">
                 <img src="assets/work-image-03.jpeg" alt="portfolio-image"/>
@@ -72,7 +73,7 @@
         </article>
     </section>
 
-    <section class="services-section">
+    <section class="services-section" id="services">
         <article class="services-card">
             <div class="services-content">
             <img src="assets/icon_web-design.svg" alt="services-icon"/>
@@ -117,7 +118,7 @@
         </article>
     </section>
 
-    <section class="contact-outer-wrapper">
+    <section class="contact-outer-wrapper" id="contact-section">
         <div class="contact-inner-wrapper">
         <h1>Let's work together</h1>
         <h5>Have a question? Need a quote? Let us know!</h5>

@@ -75,22 +75,26 @@ button {
     letter-spacing: 1px;
     color: white;
     box-shadow: 0 3px 7px 1px rgba(0,0,0,0.3);
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: white;
-    color: var(--purple);
+    background-color: hotpink;
     min-width: 125px;
 }
 
-.secondary-button {
-    background-color: transparent;
-    min-width: 0;
-    padding: 0;
+.project-link {
+    padding: 24px 0;
+    font-size: 0.8rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
     font-weight: 600;
     color: var(--purple);
-    box-shadow: none;
+}
+
+/*Ik heb niet kunnen ontdekken hoe ik de dash op hover tevoorschijn tover :( */
+.project-link:hover {
+    color: hotpink;
 }
 
 a {
@@ -125,12 +129,19 @@ header {
     gap: 16px;
 }
 
-nav ul {
+.header-illustration {
+    height: 100px;
+}
+
+.nav-items {
     display: flex;
     justify-content: flex-end;
     gap: 24px;
     list-style: none;
     padding: 24px;
+}
+
+.nav-items a {
     color: white;
 }
 
@@ -160,11 +171,15 @@ nav ul {
 
 .work-section {
     background-color: var(--background-grey);
+    display: flex;
+    flex-direction: column;
 }
 
 .article-1 {
+    flex-basis: 120px;
+    flex-grow: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 64px;
     padding:64px 64px 32px 64px;
 }
@@ -172,19 +187,22 @@ nav ul {
 .article-2 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     gap: 64px;
     padding: 32px 64px;
 }
 
 .article-3 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 64px;
     padding:32px 64px 64px 64px;
 }
 
 .article-content {
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -193,13 +211,14 @@ nav ul {
 }
 
 .portfolio-image {
-    flex-basis: 900px;
+    flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
 }
 
 .portfolio-image img {
     width: 100%;
+    box-shadow: 0 20px 25px -10px rgba(0,0,0,0.3);
 }
 
 /*Services section*/
@@ -291,4 +310,23 @@ footer p {
 
 /*Media Queries*/
 
+@media screen and (max-width: 576px) {
 
+    .nav-items {
+        justify-content: space-between;
+    }
+
+    .article-1, .article-2, .article-3 {
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+
+    .article-content {
+        flex-basis: 0;
+    }
+
+    .portfolio-image {
+        flex-basis: 0;
+    }
+
+}
