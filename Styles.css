@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Globals*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Variables*/
+
+:root {
+    --purple: #5722CD;
+    --blue: #4845E4;
+    --pink: #ED4385;
+    --default-body-txt: #0C0C0C;
+    --light-purple: #F2F0FF;
+    --background-grey: #F3F6F9;
+    --Grey: #7A7A7A;
+}
+
+/*Typography*/
+
+h1, h2, h3, h4, h6 {
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--purple);
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h5, nav {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 1.0rem;
+}
+
+p, button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+p, h3, h6 {
+    color: var(--default-body-txt);
+}
+
+/*Components*/
+
+button {
+    height: 42px;
+    min-width: 125px;
+    padding: 0 24px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: var(--pink);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    box-shadow: 0 3px 7px 1px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hotpink;
+    min-width: 125px;
+}
+
+.project-link {
+    padding: 24px 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+/*Ik heb niet kunnen ontdekken hoe ik de dash op hover tevoorschijn tover :( */
+.project-link:hover {
+    color: hotpink;
+}
+
+a {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+/*Page Sections*/
+
+/*--Header--*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--blue);
+    background: linear-gradient(90deg, var(--blue) 36%, var(--purple) 100%);
+}
+
+.header-outer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.header-inner-wrapper {
+    flex-basis: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 64px;
+    gap: 16px;
+}
+
+.header-illustration {
+    height: 100px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    list-style: none;
+    padding: 24px;
+}
+
+.nav-items a {
+    color: white;
+}
+
+/*Intro section*/
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-section div {
+    flex-basis: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 82px;
+}
+
+.intro-section div p {
+    padding-top: 32px;
+}
+
+/*Work section*/
+
+.work-section {
+    background-color: var(--background-grey);
+    display: flex;
+    flex-direction: column;
+}
+
+.article-1 {
+    flex-basis: 120px;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    padding:64px 64px 32px 64px;
+}
+
+.article-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 64px;
+    padding: 32px 64px;
+}
+
+.article-3 {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    padding:32px 64px 64px 64px;
+}
+
+.article-content {
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.portfolio-image {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.portfolio-image img {
+    width: 100%;
+    box-shadow: 0 20px 25px -10px rgba(0,0,0,0.3);
+}
+
+/*Services section*/
+
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 32px;
+    row-gap: 32px;
+    padding: 82px;
+}
+
+.services-card {
+    border: 1px, solid, var(--purple);
+    box-shadow: 0 13px 26px -16px rgba(0,0,0,0.5);
+    padding: 32px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.services-content > img {
+    height: 42px;
+}
+
+.services-content > p {
+    font-weight: 300;
+}
+
+/*Contact section*/
+
+.contact-outer-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: var(--blue);
+    background: linear-gradient(90deg, var(--blue) 36%, var(--purple) 100%);
+}
+
+.contact-inner-wrapper {
+    flex-basis: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+    padding: 82px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-form label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+label input, label textarea {
+    padding: 12px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #0C0C0C;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 24px;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 576px) {
+
+    .nav-items {
+        justify-content: space-between;
+    }
+
+    .article-1, .article-2, .article-3 {
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+
+    .article-content {
+        flex-basis: 0;
+    }
+
+    .portfolio-image {
+        flex-basis: 0;
+    }
+
+}
